@@ -4,6 +4,7 @@ import Chat from '../model/chatModel.js';
 
 
 const openai = new OpenAI({
+  apiKey: "sk-proj-f0WGZxx4j5HgokNaEfb1T3BlbkFJyp6R3sj5WQwUocTDEX1H",
 });
 
 const rateLimitWindow = 1000 * 60; // One minute in milliseconds
