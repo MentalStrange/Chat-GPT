@@ -4,7 +4,7 @@ import Chat from '../model/chatModel.js';
 
 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
+  // apiKey: process.env.OPENAI_API_KEY,
 });
 
 const rateLimitWindow = 1000 * 60; // One minute in milliseconds
