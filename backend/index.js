@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb://localhost:27017/sqlSoluationCompanyTask")
+mongoose.connect("mongodb+srv://mohamedramadan2393:mohamed@mentalstringcluster.bvmcykz.mongodb.net/?retryWrites=true&w=majority&appName=MentalStringCluster")
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 

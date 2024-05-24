@@ -9,7 +9,7 @@ function Chat() {
 
   useEffect(() => {
     if (token) {
-      axios.get('http://localhost:5000/chat', { headers: { 'x-auth-token': token } })
+      axios.get('https://chat-gpt-xu1j.onrender.com/chat', { headers: { 'x-auth-token': token } })
         .then(res => setChat(res.data))
         .catch(err => console.error(err.response.data));
     }
@@ -18,7 +18,7 @@ function Chat() {
   const onSubmit = async e => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/chat', { message }, { headers: { 'x-auth-token': token } });
+      const res = await axios.post('https://chat-gpt-xu1j.onrender.com/chat', { message }, { headers: { 'x-auth-token': token } });
       setChat([...chat, res.data]);
       setMessage('');
     } catch (err) {

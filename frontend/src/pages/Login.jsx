@@ -16,7 +16,7 @@ function Login() {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await axios.post('http://localhost:5000/auth/login', formData);
+      const res = await axios.post('https://chat-gpt-xu1j.onrender.com/auth/login', formData);
       localStorage.setItem('token', res.data.token);
       setLoading(false);
       navigate('/chat');
